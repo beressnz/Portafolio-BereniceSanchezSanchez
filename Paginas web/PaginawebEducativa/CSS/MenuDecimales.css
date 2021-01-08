@@ -1,0 +1,87 @@
+body{
+   margin: 0px;
+   padding: 0px;
+   font-family: sans-serif;
+  //background: url(../Imagenes/Cuadro.png) no-repeat center top;
+  // background-color:whitesmoke;
+  background: linear-gradient(to left, #80d5fd, #ffffff, #80d5fd);
+  animation: change 5s ease-in-out infinite;
+}
+header{
+  margin:20px auto;
+  width: 710px;
+  height: 0px;
+  background-color: rgb(255, 128, 0);
+}
+div.contenedor{
+  width: 343px;
+  height: 250px;
+  border-style: solid;
+  float: left;
+  -webkit-transition:height .3s;
+}
+div#uno{
+  background-color: #0093ff;
+}
+div#dos{
+  background-color: #0093ff;
+}
+div#tres{
+  background-color: #0093ff;
+}
+div#cuatro{
+  background-color: #0093ff;
+}
+img.icon{
+  width: 80px;
+  display: block;
+  margin: 40px auto;
+  background-color: rgba(255,255,255,0.15);
+  padding: 20px;
+  -webkit-border-radius: 30%;
+  -webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+  -webkit-transition:box-shadow 0.6s;
+  cursor: pointer;
+
+}
+p.texto{
+  font-size: 2.0rem;
+  color: black;
+  font:bold  Verdana;
+ // text-transform:uppercase;
+  text-align: center;
+  padding-top: 10px;
+  opacity: 0.6;
+  -webkit-transition:padding-top 0.6s;
+}
+div.contenedor:hover{
+  height: 380px;
+}
+div.contenedor:hover p.texto{
+  padding-top: 90px;
+  opacity: 2;
+}
+div.contenedor:hover img.icon{
+  box-shadow:0px 0px 0px 0px rgba(255,255,255,.7);
+}
+h1{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 45px;
+}
+a{
+  text-decoration: none;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
